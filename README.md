@@ -1,9 +1,14 @@
-# api documentation for  [cssnano (v3.10.0)](https://github.com/ben-eb/cssnano)  [![npm package](https://img.shields.io/npm/v/npmdoc-cssnano.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-cssnano) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-cssnano.svg)](https://travis-ci.org/npmdoc/node-npmdoc-cssnano)
+# npmdoc-cssnano
+
+#### api documentation for  [cssnano (v3.10.0)](https://github.com/ben-eb/cssnano)  [![npm package](https://img.shields.io/npm/v/npmdoc-cssnano.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-cssnano) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-cssnano.svg)](https://travis-ci.org/npmdoc/node-npmdoc-cssnano)
+
 #### A modular minifier, built on top of the PostCSS ecosystem.
 
-[![NPM](https://nodei.co/npm/cssnano.png?downloads=true)](https://www.npmjs.com/package/cssnano)
+[![NPM](https://nodei.co/npm/cssnano.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/cssnano)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-cssnano/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-cssnano_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-cssnano/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-cssnano/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-cssnano/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-cssnano/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-cssnano/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-cssnano/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Ben Briggs",
-        "email": "beneb.info@gmail.com",
         "url": "http://beneb.info"
     },
     "ava": {
@@ -117,12 +121,10 @@
     "main": "dist/index.js",
     "maintainers": [
         {
-            "name": "beneb",
-            "email": "beneb.info@gmail.com"
+            "name": "beneb"
         },
         {
-            "name": "trysound",
-            "email": "trysound@yandex.ru"
+            "name": "trysound"
         }
     ],
     "name": "cssnano",
@@ -133,7 +135,6 @@
         ]
     },
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/ben-eb/cssnano.git"
@@ -150,43 +151,6 @@
     "tonicExampleFilename": "quickstart.js",
     "version": "3.10.0"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module cssnano](#apidoc.module.cssnano)
-1.  [function <span class="apidocSignatureSpan">cssnano.</span>process (css)](#apidoc.element.cssnano.process)
-
-
-
-# <a name="apidoc.module.cssnano"></a>[module cssnano](#apidoc.module.cssnano)
-
-#### <a name="apidoc.element.cssnano.process"></a>[function <span class="apidocSignatureSpan">cssnano.</span>process (css)](#apidoc.element.cssnano.process)
-- description and source-code
-```javascript
-process = function (css) {
-    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-
-    options.map = options.map || (options.sourcemap ? true : null);
-    return (0, _postcss2.default)([cssnano(options)]).process(css, options);
-}
-```
-- example usage
-```shell
-...
-
-};
-
-/*
- * Compress the CSS asynchronously and log it to the console.
- */
-
-cssnano.process(css, opts).then(result => {
-    console.log(result.css);
-});
-...
 ```
 
 
