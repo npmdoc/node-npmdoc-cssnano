@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/ben-eb/cssnano"
-
-    >cssnano (v3.10.0)</a>
+    <a href="https://github.com/ben-eb/cssnano">cssnano (v3.10.0)</a>
 </h1>
 <h4>A modular minifier, built on top of the PostCSS ecosystem.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.cssnano">module cssnano</a><ol>
 
@@ -148,7 +141,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">process = function (css) {
-    var options = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : {};
+    var options = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : {};
 
     options.map = options.map || (options.sourcemap ? true : null);
     return (0, _postcss2.default)([cssnano(options)]).process(css, options);
@@ -161,7 +154,7 @@
  * Compress the CSS asynchronously and log it to the console.
  */
 
-cssnano.<span class="apidocCodeKeywordSpan">process</span>(css, opts).then(result =&#x3e; {
+cssnano.<span class="apidocCodeKeywordSpan">process</span>(css, opts).then(result =&gt; {
     console.log(result.css);
 });
 ...</pre></li>
@@ -197,7 +190,7 @@ cssnano.<span class="apidocCodeKeywordSpan">process</span>(css, opts).then(resul
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">process = function (css) {
-    var options = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : {};
+    var options = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : {};
 
     options.map = options.map || (options.sourcemap ? true : null);
     return (0, _postcss2.default)([cssnano(options)]).process(css, options);
@@ -210,7 +203,7 @@ cssnano.<span class="apidocCodeKeywordSpan">process</span>(css, opts).then(resul
  * Compress the CSS asynchronously and log it to the console.
  */
 
-cssnano.<span class="apidocCodeKeywordSpan">process</span>(css, opts).then(result =&#x3e; {
+cssnano.<span class="apidocCodeKeywordSpan">process</span>(css, opts).then(result =&gt; {
     console.log(result.css);
 });
 ...</pre></li>
@@ -243,3 +236,4 @@ cssnano.<span class="apidocCodeKeywordSpan">process</span>(css, opts).then(resul
     ]
 </div>
 </div>
+</body></html>
