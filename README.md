@@ -1,6 +1,6 @@
 # npmdoc-cssnano
 
-#### api documentation for  [cssnano (v3.10.0)](https://github.com/ben-eb/cssnano)  [![npm package](https://img.shields.io/npm/v/npmdoc-cssnano.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-cssnano) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-cssnano.svg)](https://travis-ci.org/npmdoc/node-npmdoc-cssnano)
+#### basic api documentation for  [cssnano (v3.10.0)](https://github.com/ben-eb/cssnano)  [![npm package](https://img.shields.io/npm/v/npmdoc-cssnano.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-cssnano) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-cssnano.svg)](https://travis-ci.org/npmdoc/node-npmdoc-cssnano)
 
 #### A modular minifier, built on top of the PostCSS ecosystem.
 
@@ -149,7 +149,8 @@
         "test-012": "nyc ava src/__tests__/*.js"
     },
     "tonicExampleFilename": "quickstart.js",
-    "version": "3.10.0"
+    "version": "3.10.0",
+    "bin": {}
 }
 ```
 
