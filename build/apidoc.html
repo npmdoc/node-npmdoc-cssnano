@@ -79,41 +79,6 @@
 
         </li>
 
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.cssnano.toString">
-            function <span class="apidocSignatureSpan">cssnano.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.cssnano.process">module cssnano.process</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.cssnano.process.process">
-            function <span class="apidocSignatureSpan">cssnano.</span>process
-            <span class="apidocSignatureSpan">(css)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.cssnano.toString">module cssnano.toString</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.cssnano.toString.toString">
-            function <span class="apidocSignatureSpan">cssnano.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
     </ol></li>
 
 </ol></div>
@@ -155,83 +120,20 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-};
+* Adds removal of outdated vendor prefixes based on browser support.
+* Addresses an issue where relative path separators were converted to
+  backslashes on Windows.
+* cssnano will now detect previous plugins and silently disable them when the
+  functionality overlaps. This is to enable faster interoperation with cssnext.
+* cssnano now exports as a PostCSS plugin. The simple interface is exposed
+  at `cssnano.<span class="apidocCodeKeywordSpan">process</span>(css, opts)` instead of `cssnano(css, opts)`.
+* Improved URL detection when using two or more in the same declaration.
+* node 0.10 is no longer officially supported.
 
-/*
- * Compress the CSS asynchronously and log it to the console.
- */
+# 1.4.3
 
-cssnano.<span class="apidocCodeKeywordSpan">process</span>(css, opts).then(result =&#x3e; {
-    console.log(result.css);
-});
+* Fixes incorrect minification of `background:none` to `background:0 0`.
 ...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.cssnano.toString" id="apidoc.element.cssnano.toString">
-        function <span class="apidocSignatureSpan">cssnano.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.cssnano.process" id="apidoc.module.cssnano.process">module cssnano.process</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.cssnano.process.process" id="apidoc.element.cssnano.process.process">
-        function <span class="apidocSignatureSpan">cssnano.</span>process
-        <span class="apidocSignatureSpan">(css)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">process = function (css) {
-    var options = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : {};
-
-    options.map = options.map || (options.sourcemap ? true : null);
-    return (0, _postcss2.default)([cssnano(options)]).process(css, options);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-};
-
-/*
- * Compress the CSS asynchronously and log it to the console.
- */
-
-cssnano.<span class="apidocCodeKeywordSpan">process</span>(css, opts).then(result =&#x3e; {
-    console.log(result.css);
-});
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.cssnano.toString" id="apidoc.module.cssnano.toString">module cssnano.toString</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.cssnano.toString.toString" id="apidoc.element.cssnano.toString.toString">
-        function <span class="apidocSignatureSpan">cssnano.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
